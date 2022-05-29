@@ -46,8 +46,7 @@ int main()
 			exit(1);
 		}
 
-		if (sendto(clientSocket, file_buffer, 3000, 0, (struct sockaddr*)&serverAddr,
-																	addr_size) < 0) {
+		if (sendto(clientSocket, file_buffer, 3000, 0, (struct sockaddr*)&serverAddr,addr_size) < 0) {
 			printf("error in sending the file\n");
 			exit(1);
 		}
